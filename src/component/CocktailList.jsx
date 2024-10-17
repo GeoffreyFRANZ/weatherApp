@@ -8,7 +8,7 @@ const CocktailList = () => {
     const [page, setPage] = useState(0);
     const [loading, setLoading] = useState(false);
     const [hasMore, setHasMore] = useState(true);
-    const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+    const alphabet = '12345789abcdefghijklmnopqrstuvwxyz'.split('');
     const baseUrl = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?f=';
 
     const { ref, inView } = useInView({
